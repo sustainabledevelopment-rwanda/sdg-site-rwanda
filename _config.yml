@@ -62,15 +62,15 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: info@statistics.gov.rw
+  suggestions: info@statistics.gov.rw
+  functional: info@statistics.gov.rw
 
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Australia
-  adjective: Australian
+  name: Rwanda
+  adjective: Rwandan
 
 # Optionally set a title/body for the frontpage banner. The defaults below point to a standard
 # translation, but feel free to change it as needed.
@@ -129,9 +129,9 @@ menu:
     translation_key: menu.updates
 
 footer_menu:
-  - path: mailto:my-email-address@example.com
+  - path: mailto:info@statistics.gov.rw
     translation_key: menu.contact_us
-  - path: https://twitter.com/MyTwitterAccount
+  - path: https://twitter.com/statisticsRW #twitter: 'statisticsRW'
     translation_key: general.twitter
   - path: https://facebook.com/MyFacebookAccount
     translation_key: general.facebook
@@ -145,7 +145,6 @@ non_global_metadata: indicator.national_metadata
 # The list of languages that are translated. The first one is the default.
 languages:
   - en
-  - es
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
