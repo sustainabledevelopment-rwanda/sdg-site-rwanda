@@ -111,17 +111,19 @@ collections:
 
 # Menu
 menu:
-  # Use these to customise the main navigation.
-  - path: /reporting-status
-    translation_key: menu.reporting_status
-  - path: /about
-    translation_key: menu.about
-  - path: /guidance
-    translation_key: menu.guidance
-  - path: /faq
-    translation_key: menu.faq
-  - path: /news
-    translation_key: menu.updates
+ # Use these to customise the main navigation.
+ - path: /
+   translation_key: general.goals
+ - path: /reporting-status/
+   translation_key: menu.reporting_status
+ - path: /about/
+   translation_key: menu.about
+ - path: /publications/
+   translation_key: menu.publications
+ - path: /guidance/
+   translation_key: menu.guidance
+ - path: /faq/
+   translation_key: menu.faq
 
 footer_menu:
   - path: mailto:info@statistics.gov.rw
