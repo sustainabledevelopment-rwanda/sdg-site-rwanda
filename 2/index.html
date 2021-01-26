@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -90,11 +90,10 @@ var translations = {
         <!-- Title and meta description
         ================================================== -->
 
-        <title>
-          
-            Goal 2 - Zero hunger
-          
-        </title>
+        
+    <title>Goal 2 - Zero hunger - Indicators For The Sustainable Development Goals</title>
+
+
 
         <meta name="description" content="">
         <meta property="og:description" content="">
@@ -122,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210126165512">
+        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210126165844">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -141,7 +140,7 @@ var translations = {
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
-  <div class="disclaimer-alert" role="alert">
+  <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
     This is a development website. We welcome your <a href="mailto:info@statistics.gov.rw">feedback</a>.
@@ -153,63 +152,98 @@ var translations = {
 <header role="banner">
   <div class="container">
 
-    <a class="navbar-brand" href="/sdg-site-rwanda/" id="home">
-      <img src="/sdg-site-rwanda/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
-    </a>
+    <div class="logo-and-mobile-widgets">
+      <a class="navbar-brand" href="/sdg-site-rwanda/" id="home">
+        <img src="/sdg-site-rwanda/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      </a>
 
-  <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
+      <div class="mobile-widgets">
+        <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
+    </div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
       <ul class="top-level">
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
-            aria-haspopup="true"
-            aria-expanded="false">
-          <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+            aria-haspopup="true">
+          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
+    <a href="/sdg-site-rwanda/">Goals</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/reporting-status/">Reporting Status</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/about/">About</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/publications/">Publications</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/guidance/">Guidance</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/faq/">FAQ</a>
+    </li></ul>
+
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li id="searchToggle"
+            aria-label="Search toggle. Click to expand or collapse the search bar."
+            aria-haspopup="true">
+          <button data-target="search-mobile" aria-expanded="false">Search</button>
+          <div id="search-mobile" class="menu-target">
+  <form action="/sdg-site-rwanda/search">
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+        </li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/sdg-site-rwanda/search">
-    <input name="q" id="indicator_search" title="Search" />
-    <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
-    </label>
+    <input type="text" name="q" id="indicator_search" title="Search" />
+    <label class="sr-only" for="indicator_search">Search</label>
+    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
-      
-      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/sdg-site-rwanda/">Goals</a>
-          </li><li class="nav-link ">
-            <a href="/sdg-site-rwanda/reporting-status/">Reporting Status</a>
-          </li><li class="nav-link ">
-            <a href="/sdg-site-rwanda/about/">About</a>
-          </li><li class="nav-link ">
-            <a href="/sdg-site-rwanda/publications/">Publications</a>
-          </li><li class="nav-link ">
-            <a href="/sdg-site-rwanda/guidance/">Guidance</a>
-          </li><li class="nav-link ">
-            <a href="/sdg-site-rwanda/faq/">FAQ</a>
-          </li></ul>
 
-      
+      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
+    <a href="/sdg-site-rwanda/">Goals</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/reporting-status/">Reporting Status</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/about/">About</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/publications/">Publications</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/guidance/">Guidance</a>
+    </li><li class="nav-link ">
+    <a href="/sdg-site-rwanda/faq/">FAQ</a>
+    </li></ul>
+
 
     </nav>
   </div>
 
 </header>
+<div id="top" tabindex=-1></div>
 
+
+<div class="container">
+  <ol class="breadcrumb">
+  
+  <li><a href="/sdg-site-rwanda/">Home</a></li>
+  <li class="active">Goal 2</li>
+  
+</ol>
+
+</div>
 
 <div class="heading goal-banner goal-2">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/2.png" alt="Zero hunger - Goal 2" />
+      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/2.png" alt="Zero hunger - Goal 2" id="goal-2" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
@@ -220,14 +254,11 @@ var translations = {
   </div>
 </div>
 
-<div id="main-content" class="container goal-indicators goal-2 goal-by-target">
+<div id="main-content" class="container goal-indicators goal-2 goal-by-target" role="main">
 
   
 
-  <ol class="breadcrumb">
-    <li><a href="/sdg-site-rwanda/">Home</a></li>
-    <li class="active">Goal 2</li>
-  </ol>
+
 
   <div class="visible-md-block visible-lg-block">
     <div class="col-md-6">
@@ -241,7 +272,7 @@ var translations = {
   
   
     
-    <div class="indicator-cards target col-md-6">
+    <div class="indicator-cards target goal-target col-md-6">
       <span>
         <label class="hidden-md hidden-lg">Target</label>
         2.1
@@ -260,17 +291,17 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-1-1">
-          <span>
-            2.1.1
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.1.1
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-1-1">
           Prevalence of undernourishment
-          
         </a>
+        
       </div>
     
 
@@ -283,23 +314,23 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-1-2">
-          <span>
-            2.1.2
-            <span class="status complete">
-              Reported online
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.1.2
+          <span class="status complete">
+            Reported online
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-1-2">
           Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)
-          
         </a>
+        
       </div>
     
     </div>
   
     
-    <div class="indicator-cards target col-md-6">
+    <div class="indicator-cards target goal-target col-md-6">
       <span>
         <label class="hidden-md hidden-lg">Target</label>
         2.2
@@ -318,17 +349,17 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-2-1">
-          <span>
-            2.2.1
-            <span class="status complete">
-              Reported online
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.2.1
+          <span class="status complete">
+            Reported online
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-2-1">
           Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age
-          
         </a>
+        
       </div>
     
 
@@ -341,23 +372,23 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-2-2">
-          <span>
-            2.2.2
-            <span class="status complete">
-              Reported online
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.2.2
+          <span class="status complete">
+            Reported online
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-2-2">
           Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)
-          
         </a>
+        
       </div>
     
     </div>
   
     
-    <div class="indicator-cards target col-md-6">
+    <div class="indicator-cards target goal-target col-md-6">
       <span>
         <label class="hidden-md hidden-lg">Target</label>
         2.3
@@ -376,17 +407,17 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-3-1">
-          <span>
-            2.3.1
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.3.1
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-3-1">
           Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size
-          
         </a>
+        
       </div>
     
 
@@ -399,23 +430,23 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-3-2">
-          <span>
-            2.3.2
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.3.2
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-3-2">
           Average income of small-scale food producers, by sex and indigenous status
-          
         </a>
+        
       </div>
     
     </div>
   
     
-    <div class="indicator-cards target col-md-6">
+    <div class="indicator-cards target goal-target col-md-6">
       <span>
         <label class="hidden-md hidden-lg">Target</label>
         2.4
@@ -434,23 +465,23 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-4-1">
-          <span>
-            2.4.1
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.4.1
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-4-1">
           Proportion of agricultural area under productive and sustainable agriculture
-          
         </a>
+        
       </div>
     
     </div>
   
     
-    <div class="indicator-cards target col-md-6">
+    <div class="indicator-cards target goal-target col-md-6">
       <span>
         <label class="hidden-md hidden-lg">Target</label>
         2.5
@@ -469,17 +500,17 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-5-1">
-          <span>
-            2.5.1
-            <span class="status complete">
-              Reported online
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.5.1
+          <span class="status complete">
+            Reported online
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-5-1">
           Number of plant and animal genetic resources for food and agriculture secured in either medium or long-term conservation facilities
-          
         </a>
+        
       </div>
     
 
@@ -492,23 +523,23 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-5-2">
-          <span>
-            2.5.2
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.5.2
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-5-2">
           Proportion of local breeds classified as being at risk, not-at-risk or at unknown level of risk of extinction
-          
         </a>
+        
       </div>
     
     </div>
   
     
-    <div class="indicator-cards target col-md-6">
+    <div class="indicator-cards target goal-target col-md-6">
       <span>
         <label class="hidden-md hidden-lg">Target</label>
         2.a
@@ -527,17 +558,17 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-a-1">
-          <span>
-            2.a.1
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.a.1
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-a-1">
           The agriculture orientation index for government expenditures
-          
         </a>
+        
       </div>
     
 
@@ -550,23 +581,23 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-a-2">
-          <span>
-            2.a.2
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.a.2
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-a-2">
           Total official flows (official development assistance plus other official flows) to the agriculture sector
-          
         </a>
+        
       </div>
     
     </div>
   
     
-    <div class="indicator-cards target col-md-6">
+    <div class="indicator-cards target goal-target col-md-6">
       <span>
         <label class="hidden-md hidden-lg">Target</label>
         2.b
@@ -585,23 +616,23 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-b-1">
-          <span>
-            2.b.1
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.b.1
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-b-1">
           Agricultural export subsidies
-          
         </a>
+        
       </div>
     
     </div>
   
     
-    <div class="indicator-cards target col-md-6">
+    <div class="indicator-cards target goal-target col-md-6">
       <span>
         <label class="hidden-md hidden-lg">Target</label>
         2.c
@@ -620,17 +651,17 @@ var translations = {
       
       
 
-      <div class="col-md-12 ">
-        <a href="/sdg-site-rwanda/2-c-1">
-          <span>
-            2.c.1
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.c.1
+          <span class="status notstarted">
+            Exploring data sources
           </span>
+        </span>
+        <a href="/sdg-site-rwanda/2-c-1">
           Indicator of food price anomalies
-          
         </a>
+        
       </div>
     
     </div>
@@ -645,32 +676,28 @@ var translations = {
           <ul>
             <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
-              
-                <li>
+              <li>
                 
                   <a href="mailto:info@statistics.gov.rw" target="_blank">Contact us</a>
                 
                 </li>
-              
-                <li>
+              <li>
                 
                   <a href="https://twitter.com/statisticsRW" target="_blank">Twitter</a>
                 
                 </li>
-              
-                <li>
+              <li>
                 
                   <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
                 
                 </li>
-              
-                <li>
+              <li>
                 <a href="/sdg-site-rwanda/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
             
-          </ul>
+            </ul>
         </div>
       </div>
     </div>
@@ -692,6 +719,7 @@ var translations = {
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -701,7 +729,9 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210126165512'></script><script>
+<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210126165844'></script>
+
+<script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -734,15 +764,13 @@ $(function() {
               chartTitle: domData.charttitle,
               chartTitles: domData.charttitles,
               measurementUnit: domData.measurementunit,
-              copyright: domData.copyright,
-              dataSource: domData.datasource,
-              geographicalArea: domData.geographicalarea,
               showData: domData.showdata,
-              footnote: domData.footnote,
               graphType: domData.graphtype,
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
+              graphAnnotations: domData.graphannotations,
+              indicatorDownloads: domData.indicatordownloads,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',
