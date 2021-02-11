@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210211141311">
+        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210211142207">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -351,11 +351,11 @@ var translations = {
   data-country="Rwanda"
   data-charttitle="Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age"
   data-charttitles="null"
-  data-measurementunit=""
+  data-measurementunit="Percentage (%)"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
-  data-showmap=""
+  data-showmap="false"
   data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
@@ -404,7 +404,13 @@ var translations = {
 
   <div id="datatableFooter">
     
+    <p>Source: National Institute of Statistics of Rwanda (NISR)</p>
     
+    
+    <p>Geographical Area: Rwanda</p>
+    
+    
+    <p>Unit of Measurement: Percentage (%)</p>
     
     
   </div>
@@ -694,9 +700,18 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-
+        <dt>Source:</dt>
+        <dd>National Institute of Statistics of Rwanda (NISR)</dd>
         
 
+        
+        <dt>Geographical Area:</dt>
+        <dd>Rwanda</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Percentage (%)</dd>
         
 
         
@@ -730,9 +745,18 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-
+        <dt>Source:</dt>
+        <dd>National Institute of Statistics of Rwanda (NISR)</dd>
         
 
+        
+        <dt>Geographical Area:</dt>
+        <dd>Rwanda</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Percentage (%)</dd>
         
 
         
@@ -816,7 +840,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator available </th>
         <td>
           
-            
+            <p>Percentage of ever-married women age 15-49 years who have experienced various forms of violence ever or in the 12 months preceding the survey committed by their husband/partner.</p>
 
           
         </td>
@@ -830,7 +854,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            
+            <p>According to the UN Declaration on the Elimination of Violence against Women (1993), Violence against Women is “Any act of gender-based violence that results in, or is likely to result in, physical, sexual or psychological harm or suffering to women, including threats of such acts, coercion or arbitrary deprivation of liberty, whether occurring in public or in private life. Violence against women shall be understood to encompass, but not be limited to, the following; Physical, sexual and psychological violence occurring in the family […]”. See here ‘http://www.un.org/documents/ga/res/48/a48r104.htm’ full definition. Intimate partner violence includes any abuse perpetrated by a current or former partner within the context of marriage, cohabitation or any other formal or informal union. The different forms of violence included in the indicator are defined as follows; 1. Physical violence consists of acts aimed at physically hurting the victim and include, but are not limited to, pushing, grabbing, twisting the arm, pulling the hair, slapping, kicking, biting or hitting with the fist or object, trying to strangle or suffocate, burning or scalding on purpose, or threatening or attacking with some sort of weapon, gun or knife. 2. Sexual violence is defined as any sort of harmful or unwanted sexual behaviour that is imposed on someone. It includes acts of abusive sexual contact, forced engagement in sexual acts, attempted or completed sexual acts without consent, incest, sexual harassment, etc. In intimate partner relationships, experiencing sexual violence is commonly defined as being forced to have sexual intercourse, having sexual intercourse out of fear for what the partner might do, and/or being forced to so something sexual that the woman considers humiliating or degrading. 3. Psychological violence includes a range of behaviours that encompass acts of emotional abuse and controlling behaviour. These often coexist with acts of physical and sexual violence by intimate partners and are acts of violence in themselves. For a more detailed definition of physical, sexual and psychological violence against women see Guidelines for Producing Statistics on Violence against Women- Statistical Surveys (UN, 2014).</p>
 
           
         </td>
@@ -844,7 +868,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            
+            <p>Rwanda</p>
 
           
         </td>
@@ -858,7 +882,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            
+            <p>Percentage (%)</p>
 
           
         </td>
@@ -872,7 +896,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definitions </th>
         <td>
           
-            
+            <p>This indicator measures the percentage of ever-married women and girls aged 15-49 years who have experienced spousal physical, sexual or psychological violence in the previous 12 months.</p>
 
           
         </td>
@@ -886,7 +910,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Calculations </th>
         <td>
           
-            
+            <p>This indicator calls for breakdown by form of violence and by age group and yields the following for each form of violence or forms of violence; 1. Physical violence; Number of ever-partnered women and girls (aged 15 years and above) who experience physical violence by a current or former intimate partner in the previous 12 months divided by the number of ever-partnered women and girls (aged 15 years and above) in the population multiplied by 100. 2. Sexual violence; Number of ever-partnered women and girls (aged 15 years and above) who experience sexual violence by a current or former intimate partner in the previous 12 months divided by the number of ever-partnered women and girls (aged 15 years and above) in the population multiplied by 100. 3. Psychological violence; Number of ever-partnered women and girls (aged 15 years and above) who experience psychological violence by a current or former intimate partner in the previous 12 months divided by the number of ever-partnered women and girls (aged 15 years and above) multiplied by 100. 4. Any form of physical and/or sexual violence; Number of ever-partnered women and girls (aged 15 years and above) who experience physical and/or sexual violence by a current or former intimate partner in the previous 12 months divided by the number of ever-partnered women and girls (aged 15 years and above) multiplied by 100. 5. Any form of physical, sexual and/or psychological violence; Number of ever-partnered women and girls (aged 15 years and above) who experience physical, sexual and/or psychological violence by a current or former intimate partner in the previous 12 months divided by the number of ever-partnered women and girls (aged 15 years and above) multiplied by 100.</p>
 
           
         </td>
@@ -956,6 +980,10 @@ data-event-label="Change to Sources tab"
             
             
 
+            
+              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data-rwanda/commit/2681c507c601f652caf30eebd76f46acc23d97f0" target="_blank">
+                2021-02-10: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              </a>
             
 
           
@@ -1086,7 +1114,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator number </th>
         <td>
           
-            
+            <p>5.2.1</p>
 
           
         </td>
@@ -1100,7 +1128,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Target name </th>
         <td>
           
-            
+            <p>Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking and sexual and other types of exploitation</p>
 
           
         </td>
@@ -1128,7 +1156,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Global indicator description </th>
         <td>
           
-            
+            <p>This indicator measures the percentage of ever-partnered women and girls aged 15 years and older who have experienced physical, sexual or psychological violence by a current or former intimate partner, in the previous 12 months.</p>
 
           
         </td>
@@ -1142,7 +1170,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN designated tier </th>
         <td>
           
-            
+            <p>Tier II</p>
 
           
         </td>
@@ -1156,7 +1184,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN custodian agency </th>
         <td>
           
-            
+            <p>United Nations Entity for Gender Equality and the Empowerment of Women (UN Women), United Nations Children’s Fund (UNICEF), United Nations Statistics Division (UNSD), World Health Organization (WHO), United Nations Population Fund (UNFPA)</p>
 
           
         </td>
@@ -1175,6 +1203,10 @@ data-event-label="Change to Sources tab"
             
             
 
+            
+              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-05-02-01.pdf" target="_blank">
+                United Nations Sustainable Development Goals Metadata (pdf 894kB) <span class="visuallyhidden">opens in a new window</span>
+              </a>
             
 
           
@@ -1292,6 +1324,269 @@ data-event-label="Change to Sources tab"
 
 
 
+  <div class="row no-gutters">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>National Institute of Statistics of Rwanda (NISR)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>3-5 years</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Earliest available data </th>
+        <td>
+          
+            <p>1992</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            <p>Rwanda</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="http://www.statistics.gov.rw/publication/demographic-and-health-survey-20142015-final-report" target="_blank">
+                Rwanda Demographic Health Survey (RDHS) <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Release date </th>
+        <td>
+          
+            <p>2014/15</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Next release </th>
+        <td>
+          
+            <p>TBD</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Statistical classification </th>
+        <td>
+          
+            <p>Official</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
+          
+            <p>http://www.statistics.gov.rw/</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Other information </th>
+        <td>
+          
+            <p>info@statistics.gov.rw</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+  </div>
+
 
 </div>
 
@@ -1376,7 +1671,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210211141311'></script>
+<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210211142207'></script>
 
 <script>
 $(function() {

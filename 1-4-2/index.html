@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210211141311">
+        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210211142207">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -340,6 +340,13 @@ var translations = {
 
   
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>The administrative data source was used to get data for this indicator.</p>
+
+  </div>
+</div>
+
 
   
 
@@ -349,13 +356,13 @@ var translations = {
   data-indicatorid='indicator_1-4-2'
   data-id="1-4-2"
   data-country="Rwanda"
-  data-charttitle="Proportion of total adult population with secure tenure rights to land, with legally recognized documentation, and who perceive their rights to land as secure, by sex and by type of tenure"
+  data-charttitle="Proportion of total adult population with secure tenure rights to land by sex"
   data-charttitles="null"
-  data-measurementunit=""
+  data-measurementunit="Number"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
-  data-showmap=""
+  data-showmap="false"
   data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
@@ -392,7 +399,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Proportion of total adult population with secure tenure rights to land, with legally recognized documentation, and who perceive their rights to land as secure, by sex and by type of tenure</caption>
+      <caption>Proportion of total adult population with secure tenure rights to land by sex</caption>
       <thead>
         
       </thead>
@@ -404,7 +411,13 @@ var translations = {
 
   <div id="datatableFooter">
     
+    <p>Source: Rwanda Land Management and Use Authority (RLMUA)</p>
     
+    
+    <p>Geographical Area: Rwanda</p>
+    
+    
+    <p>Unit of Measurement: Number</p>
     
     
   </div>
@@ -451,7 +464,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Proportion of total adult population with secure tenure rights to land, with legally recognized documentation, and who perceive their rights to land as secure, by sex and by type of tenure</h4>
+          <h4 id="chart-heading" class="chart-title">Proportion of total adult population with secure tenure rights to land by sex</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -694,9 +707,18 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-
+        <dt>Source:</dt>
+        <dd>Rwanda Land Management and Use Authority (RLMUA)</dd>
         
 
+        
+        <dt>Geographical Area:</dt>
+        <dd>Rwanda</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Number</dd>
         
 
         
@@ -730,9 +752,18 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-
+        <dt>Source:</dt>
+        <dd>Rwanda Land Management and Use Authority (RLMUA)</dd>
         
 
+        
+        <dt>Geographical Area:</dt>
+        <dd>Rwanda</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Number</dd>
         
 
         
@@ -816,7 +847,8 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator available </th>
         <td>
           
-            
+            <p>Number of parcels registered with titles deeds,</p>
+<p>Proportion of total population who perceive their rights to land as secure.</p>
 
           
         </td>
@@ -830,7 +862,10 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            
+            <p>This indicator covers (a) all types of land use (such as residential, commercial, agricultural, forestry, grazing, wetlands based on standard land-use classification) in both rural and urban areas; and (b) all land tenure types as recognized at the country level, such as freehold, leasehold, public land, customary land. An individual can hold land in his/her own name, jointly with other individuals, as a member of a household, or collectively as member of group1, cooperative or other type of association. Secure tenure rights; comprised of two sub-components; (i) legally recognized documentation and (ii) perception of the security of tenure, which are both necessary to provide a full measurement of tenure security.</p>
+<p>Legally recognized documentation; Legal documentation of rights refers to the recording and publication of information on the nature and location of land, rights and right holders in a form that is recognized by government and is therefore official.</p>
+<p>Perceived security of tenure; Perception of tenure security refers to an individual’s perception of the likelihood of involuntary loss of land, such as disagreement of the ownership rights over land or ability to use it, regardless of the formal status and can be more optimistic or pessimistic. Although those without land rights’ documentation may frequently be perceived to be under threat, and those with documentation perceived as protected, there may be situations where documented land rights alone are insufficient to guarantee tenure security. Conversely, even without legally recognized documentation, individuals may feel themselves to be protected against eviction or dispossession.</p>
+<p>Perceptions of tenure to be secure if; (i) The landholder does not report a fear of involuntary loss of the land within the next five years due to, for example, intra-family, community or external threats and (ii) The landholder reports having the right to bequeath the land.</p>
 
           
         </td>
@@ -844,7 +879,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            
+            <p>Rwanda</p>
 
           
         </td>
@@ -858,7 +893,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            
+            <p>Number</p>
 
           
         </td>
@@ -886,7 +921,12 @@ data-event-label="Change to Sources tab"
         <th scope="row">Calculations </th>
         <td>
           
-            
+            <p>The Indicator is composed of two parts;</p>
+<p>(A) measures the incidence of adults with legally recognized documentation over land among the total adult population; while</p>
+<p>(B) focuses on the incidence of adults who report having perceived secure rights to land among the adult population.</p>
+<p>Part (A) and part (B) provide two complementary data sets on security of tenure rights, needed for measuring the indicator.</p>
+<p>Part(A) is calculated as (People (Adult) with legally recognized documentation over land / Total adult population) * 100, while</p>
+<p>Part(B) is calculated as (People (Adult)who perceive their rights as secure / Total adult population) * 100.</p>
 
           
         </td>
@@ -956,6 +996,10 @@ data-event-label="Change to Sources tab"
             
             
 
+            
+              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data-rwanda/commit/2681c507c601f652caf30eebd76f46acc23d97f0" target="_blank">
+                2021-02-10: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              </a>
             
 
           
@@ -1086,7 +1130,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator number </th>
         <td>
           
-            
+            <p>1.4.2</p>
 
           
         </td>
@@ -1100,7 +1144,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Target name </th>
         <td>
           
-            
+            <p>By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance</p>
 
           
         </td>
@@ -1128,7 +1172,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Global indicator description </th>
         <td>
           
-            
+            <p>Indicator 1.4.2 measures the relevant part of Target 1.4 (ensure men and women have equal rights to economic resources, as well as access to …, ownership of and control over land and other forms of property, inheritance, natural resources). It measures the results of policies that aim to strengthen tenure security for all, including women and other vulnerable groups. Indicator 1.4.2 covers (a) all types of land use (such as residential, commercial, agricultural, forestry, grazing, wetlands based on standard land-use classification) in both rural and urban areas; and (b) all land tenure types as recognized at the country level, such as freehold, leasehold, public land, customary land. An individual can hold land in his/her own name, jointly with other individuals, as a member of a household, or collectively as member of group , cooperative or other type of association.</p>
 
           
         </td>
@@ -1142,7 +1186,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN designated tier </th>
         <td>
           
-            
+            <p>Tier II</p>
 
           
         </td>
@@ -1156,7 +1200,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN custodian agency </th>
         <td>
           
-            
+            <p>World Bank, UN-Habitat</p>
 
           
         </td>
@@ -1175,6 +1219,10 @@ data-event-label="Change to Sources tab"
             
             
 
+            
+              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-04-02.pdf" target="_blank">
+                United Nations Sustainable Development Goals Metadata (pdf 894kB) <span class="visuallyhidden">opens in a new window</span>
+              </a>
             
 
           
@@ -1292,6 +1340,532 @@ data-event-label="Change to Sources tab"
 
 
 
+  <div class="row no-gutters">
+  
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 1</h4>
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Rwanda Land Management and Use Authority (RLMUA)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Earliest available data </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            <p>Rwanda</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="http://www.rlma.rw/index.php?id=67" target="_blank">
+                Land Administration Information System <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Release date </th>
+        <td>
+          
+            <p>TBD</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Next release </th>
+        <td>
+          
+            <p>TBD</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Statistical classification </th>
+        <td>
+          
+            <p>Administrative</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
+          
+            <p>http://www.rlma.rw/index.php?id=67</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Other information </th>
+        <td>
+          
+            <p>info@rlma.rw</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 2</h4>
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Rwanda Land Management and Use Authority (RLMUA)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Earliest available data </th>
+        <td>
+          
+            <p>2015</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            <p>Rwanda</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="http://www.rlma.rw/index.php?id=67" target="_blank">
+                Impact Evaluation on Land Tenure Regulation <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Release date </th>
+        <td>
+          
+            <p>TBD</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Next release </th>
+        <td>
+          
+            <p>TBD</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Statistical classification </th>
+        <td>
+          
+            <p>Administrative</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
+          
+            <p>http://www.rlma.rw/index.php?id=67</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Other information </th>
+        <td>
+          
+            <p>info@rlma.rw</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+  </div>
+
 
 </div>
 
@@ -1376,7 +1950,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210211141311'></script>
+<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210211142207'></script>
 
 <script>
 $(function() {

@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indicator 16.1.1 - Number of victims of intentional homicide per 100,000 population, by sex and age  - Indicators For The Sustainable Development Goals</title>
+    <title>Indicator 16.1.1 - Number of victims of intentional homicide per 100,000 population, by sex and age - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210211141311">
+        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210211142207">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -325,7 +325,7 @@ var translations = {
         <div>
           <h1>
             Indicator 16.1.1
-            <span class="lead-copy">Number of victims of intentional homicide per 100,000 population, by sex and age </span>
+            <span class="lead-copy">Number of victims of intentional homicide per 100,000 population, by sex and age</span>
           </h1>
         </div>
       </div>
@@ -349,13 +349,13 @@ var translations = {
   data-indicatorid='indicator_16-1-1'
   data-id="16-1-1"
   data-country="Rwanda"
-  data-charttitle="Number of victims of intentional homicide per 100,000 population, by sex and age "
+  data-charttitle="Homicides rates (per 100,000 population)"
   data-charttitles="null"
-  data-measurementunit=""
+  data-measurementunit="Rate per 100,000 population"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
-  data-showmap=""
+  data-showmap="false"
   data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
@@ -392,7 +392,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Number of victims of intentional homicide per 100,000 population, by sex and age </caption>
+      <caption>Homicides rates (per 100,000 population)</caption>
       <thead>
         
         
@@ -620,7 +620,13 @@ var translations = {
 
   <div id="datatableFooter">
     
+    <p>Source: RGB</p>
     
+    
+    <p>Geographical Area: Rwanda</p>
+    
+    
+    <p>Unit of Measurement: Rate per 100,000 population</p>
     
     
   </div>
@@ -667,7 +673,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Number of victims of intentional homicide per 100,000 population, by sex and age </h4>
+          <h4 id="chart-heading" class="chart-title">Homicides rates (per 100,000 population)</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -910,9 +916,18 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-
+        <dt>Source:</dt>
+        <dd>RGB</dd>
         
 
+        
+        <dt>Geographical Area:</dt>
+        <dd>Rwanda</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Rate per 100,000 population</dd>
         
 
         
@@ -946,9 +961,18 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-
+        <dt>Source:</dt>
+        <dd>RGB</dd>
         
 
+        
+        <dt>Geographical Area:</dt>
+        <dd>Rwanda</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>Rate per 100,000 population</dd>
         
 
         
@@ -1060,7 +1084,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            
+            <p>Rwanda</p>
 
           
         </td>
@@ -1074,7 +1098,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            
+            <p>Rate per 100,000 population</p>
 
           
         </td>
@@ -1172,6 +1196,10 @@ data-event-label="Change to Sources tab"
             
             
 
+            
+              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data-rwanda/commit/2681c507c601f652caf30eebd76f46acc23d97f0" target="_blank">
+                2021-02-10: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              </a>
             
 
           
@@ -1302,7 +1330,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicator number </th>
         <td>
           
-            
+            <p>16.1.1</p>
 
           
         </td>
@@ -1316,7 +1344,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Target name </th>
         <td>
           
-            
+            <p>Significantly reduce all forms of violence and related death rates everywhere</p>
 
           
         </td>
@@ -1344,7 +1372,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Global indicator description </th>
         <td>
           
-            
+            <p>The indicator is defined as the total count of victims of intentional homicide divided by the total population, expressed per 100,000 population. Intentional homicide is defined as the unlawful death inflicted upon a person with the intent to cause death or serious injury (Source; International Classification of Crime for Statistical Purposes, ICCS 2015); population refers to total resident population in a given country in a given year.</p>
 
           
         </td>
@@ -1358,7 +1386,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN designated tier </th>
         <td>
           
-            
+            <p>Tier I</p>
 
           
         </td>
@@ -1372,7 +1400,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN custodian agency </th>
         <td>
           
-            
+            <p>United Nations Office on Drugs and Crime (UNODC)</p>
 
           
         </td>
@@ -1391,6 +1419,10 @@ data-event-label="Change to Sources tab"
             
             
 
+            
+              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-16-01-01.pdf" target="_blank">
+                United Nations Sustainable Development Goals Metadata (pdf 894kB) <span class="visuallyhidden">opens in a new window</span>
+              </a>
             
 
           
@@ -1508,6 +1540,269 @@ data-event-label="Change to Sources tab"
 
 
 
+  <div class="row no-gutters">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>RGB</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Earliest available data </th>
+        <td>
+          
+            <p>2018</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            <p>Rwanda</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="http://rgb.rw/fileadmin/Rwanda_Governance_Scorecard_all/RGS_5TH_EDITION_24_OCT2018.pdf" target="_blank">
+                http://rgb.rw/fileadmin/Rwanda_Governance_Scorecard_all/RGS_5TH_EDITION_24_OCT2018.pdf <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Release date </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Next release </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Statistical classification </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Other information </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+  </div>
+
 
 </div>
 
@@ -1592,7 +1887,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210211141311'></script>
+<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210211142207'></script>
 
 <script>
 $(function() {
