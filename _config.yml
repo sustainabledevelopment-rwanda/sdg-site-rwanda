@@ -31,6 +31,8 @@ remote_theme: open-sdg/open-sdg@1.2.0
 accessible_tabs: true
 accessible_charts: true
 
+series_toggle: true
+
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
 url: ""
