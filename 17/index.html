@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -90,10 +90,11 @@ var translations = {
         <!-- Title and meta description
         ================================================== -->
 
-        
-    <title>Goal 17 - Partnerships for the goals - Indicators For The Sustainable Development Goals</title>
-
-
+        <title>
+          
+            Goal 17 - Partnerships for the goals
+          
+        </title>
 
         <meta name="description" content="">
         <meta property="og:description" content="">
@@ -121,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210312180308">
+        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210312180333">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -140,7 +141,7 @@ var translations = {
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
-  <div class="disclaimer-alert">
+  <div class="disclaimer-alert" role="alert">
     <strong class="phase-tag">Alpha</strong>
     
     This is a development website. We welcome your <a href="mailto:info@statistics.gov.rw">feedback</a>.
@@ -152,98 +153,63 @@ var translations = {
 <header role="banner">
   <div class="container">
 
-    <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/sdg-site-rwanda/" id="home">
-        <img src="/sdg-site-rwanda/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
-      </a>
+    <a class="navbar-brand" href="/sdg-site-rwanda/" id="home">
+      <img src="/sdg-site-rwanda/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    </a>
 
-      <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
-    </div>
+  <div class='hidden visible-xs float-right'>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
       <ul class="top-level">
         <li id="menuToggle"
-            aria-label=""
-            aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
-          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/sdg-site-rwanda/">Goals</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/reporting-status/">Reporting Status</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/about/">About</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/publications/">Publications</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/guidance/">Guidance</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/faq/">FAQ</a>
-    </li></ul>
-
+            aria-label="Menu toggle. Click to expand or collapse the menu."
+            aria-haspopup="true"
+            aria-expanded="false">
+          <span data-target="menu" tabindex="0"
+          role="navigation">Menu</span>
         </li>
-        <li id="searchToggle"
-            aria-label=""
-            aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Search</button>
-          <div id="search-mobile" class="menu-target">
-  <form action="/sdg-site-rwanda/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-        </li>
+        <li><span data-target="search">Search</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/sdg-site-rwanda/search">
-    <input type="text" name="q" id="indicator_search" title="Search" />
-    <label class="sr-only" for="indicator_search">Search</label>
-    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input name="q" id="indicator_search" title="Search" />
+    <label for="indicator_search">
+      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+    </label>
   </form>
 </div>
 
-
+      
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/sdg-site-rwanda/">Goals</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/reporting-status/">Reporting Status</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/about/">About</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/publications/">Publications</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/guidance/">Guidance</a>
-    </li><li class="nav-link ">
-    <a href="/sdg-site-rwanda/faq/">FAQ</a>
-    </li></ul>
+            <a href="/sdg-site-rwanda/">Goals</a>
+          </li><li class="nav-link ">
+            <a href="/sdg-site-rwanda/reporting-status/">Reporting Status</a>
+          </li><li class="nav-link ">
+            <a href="/sdg-site-rwanda/about/">About</a>
+          </li><li class="nav-link ">
+            <a href="/sdg-site-rwanda/publications/">Publications</a>
+          </li><li class="nav-link ">
+            <a href="/sdg-site-rwanda/guidance/">Guidance</a>
+          </li><li class="nav-link ">
+            <a href="/sdg-site-rwanda/faq/">FAQ</a>
+          </li></ul>
 
+      
 
     </nav>
   </div>
 
 </header>
-<div id="top" tabindex=-1></div>
 
-
-<div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/sdg-site-rwanda/">Home</a></li>
-  <li class="active">Goal 17</li>
-  
-</ol>
-
-</div>
 
 <div class="heading goal-banner goal-17">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png" alt="Partnerships for the goals - Goal 17" id="goal-17" />
+      <div class="col-xs-4 col-md-3 col-lg-2">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png" alt="Partnerships for the goals - Goal 17" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
@@ -254,11 +220,14 @@ var translations = {
   </div>
 </div>
 
-<div id="main-content" class="container goal-indicators goal-17 goal-by-target" role="main">
+<div id="main-content" class="container goal-indicators goal-17 goal-by-target">
 
   
 
-
+  <ol class="breadcrumb">
+    <li><a href="/sdg-site-rwanda/">Home</a></li>
+    <li class="active">Goal 17</li>
+  </ol>
 
   <div class="visible-md-block visible-lg-block">
     <div class="col-md-6">
@@ -292,16 +261,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.1.1
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-1-1">
+          <span>
+            17.1.1
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Total government revenue as a proportion of GDP, by source
+          
         </a>
-        
       </div>
     
 
@@ -315,16 +284,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.1.2
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-1-2">
+          <span>
+            17.1.2
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Proportion of domestic budget funded by domestic taxes
+          
         </a>
-        
       </div>
     
     </div>
@@ -350,16 +319,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.2.1
-          <span class="status notapplicable">
-            Not applicable
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-2-1">
+          <span>
+            17.2.1
+            <span class="status notapplicable">
+              Not applicable
+            </span>
+          </span>
           Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)
+          
         </a>
-        
       </div>
     
     </div>
@@ -385,16 +354,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.3.1
-          <span class="status notstarted">
-            Exploring data sources
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-3-1">
+          <span>
+            17.3.1
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+          </span>
           Foreign direct investment (FDI), official development assistance and South-South cooperation as a proportion of total domestic budget
+          
         </a>
-        
       </div>
     
 
@@ -408,16 +377,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.3.2
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-3-2">
+          <span>
+            17.3.2
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Volume of remittances (in United States dollars) as a proportion of total GDP
+          
         </a>
-        
       </div>
     
     </div>
@@ -443,16 +412,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.4.1
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-4-1">
+          <span>
+            17.4.1
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Debt service as a proportion of exports of goods and services
+          
         </a>
-        
       </div>
     
     </div>
@@ -478,16 +447,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.5.1
-          <span class="status notapplicable">
-            Not applicable
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-5-1">
+          <span>
+            17.5.1
+            <span class="status notapplicable">
+              Not applicable
+            </span>
+          </span>
           Number of countries that adopt and implement investment promotion regimes for least developed countries
+          
         </a>
-        
       </div>
     
     </div>
@@ -513,16 +482,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.6.1
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-6-1">
+          <span>
+            17.6.1
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Number of science and/or technology cooperation agreements and programmes between countries, by type of cooperation
+          
         </a>
-        
       </div>
     
 
@@ -536,16 +505,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.6.2
-          <span class="status notstarted">
-            Exploring data sources
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-6-2">
+          <span>
+            17.6.2
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+          </span>
           Fixed Internet broadband subscriptions per 100 inhabitants, by speed
+          
         </a>
-        
       </div>
     
     </div>
@@ -571,16 +540,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.7.1
-          <span class="status notapplicable">
-            Not applicable
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-7-1">
+          <span>
+            17.7.1
+            <span class="status notapplicable">
+              Not applicable
+            </span>
+          </span>
           Total amount of approved funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies
+          
         </a>
-        
       </div>
     
     </div>
@@ -606,16 +575,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.8.1
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-8-1">
+          <span>
+            17.8.1
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Proportion of individuals using the Internet
+          
         </a>
-        
       </div>
     
     </div>
@@ -641,16 +610,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.9.1
-          <span class="status notapplicable">
-            Not applicable
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-9-1">
+          <span>
+            17.9.1
+            <span class="status notapplicable">
+              Not applicable
+            </span>
+          </span>
           Dollar value of financial and technical assistance (including through North-South, South‐South and triangular cooperation) committed to developing countries
+          
         </a>
-        
       </div>
     
     </div>
@@ -676,16 +645,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.10.1
-          <span class="status notapplicable">
-            Not applicable
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-10-1">
+          <span>
+            17.10.1
+            <span class="status notapplicable">
+              Not applicable
+            </span>
+          </span>
           Worldwide weighted tariff-average
+          
         </a>
-        
       </div>
     
     </div>
@@ -711,16 +680,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.11.1
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-11-1">
+          <span>
+            17.11.1
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Developing countries’ and least developed countries’ share of global exports
+          
         </a>
-        
       </div>
     
     </div>
@@ -746,16 +715,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.12.1
-          <span class="status notapplicable">
-            Not applicable
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-12-1">
+          <span>
+            17.12.1
+            <span class="status notapplicable">
+              Not applicable
+            </span>
+          </span>
           Average tariffs faced by developing countries, least developed countries and small island developing States
+          
         </a>
-        
       </div>
     
     </div>
@@ -781,16 +750,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.13.1
-          <span class="status notstarted">
-            Exploring data sources
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-13-1">
+          <span>
+            17.13.1
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+          </span>
           Macroeconomic Dashboard
+          
         </a>
-        
       </div>
     
     </div>
@@ -816,16 +785,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.14.1
-          <span class="status notstarted">
-            Exploring data sources
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-14-1">
+          <span>
+            17.14.1
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+          </span>
           Number of countries with mechanisms in place to enhance policy coherence of sustainable development
+          
         </a>
-        
       </div>
     
     </div>
@@ -851,16 +820,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.15.1
-          <span class="status notapplicable">
-            Not applicable
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-15-1">
+          <span>
+            17.15.1
+            <span class="status notapplicable">
+              Not applicable
+            </span>
+          </span>
           Extent of use of country-owned results frameworks and planning tools by providers of development cooperation
+          
         </a>
-        
       </div>
     
     </div>
@@ -886,16 +855,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.16.1
-          <span class="status notstarted">
-            Exploring data sources
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-16-1">
+          <span>
+            17.16.1
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+          </span>
           Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals
+          
         </a>
-        
       </div>
     
     </div>
@@ -921,16 +890,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.17.1
-          <span class="status notstarted">
-            Exploring data sources
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-17-1">
+          <span>
+            17.17.1
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+          </span>
           Amount of United States dollars committed to public-private and civil society partnerships
+          
         </a>
-        
       </div>
     
     </div>
@@ -956,16 +925,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.18.1
-          <span class="status notstarted">
-            Exploring data sources
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-18-1">
+          <span>
+            17.18.1
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+          </span>
           Proportion of sustainable development indicators produced at the national level with full disaggregation when relevant to the target, in accordance with the Fundamental Principles of Official Statistics
+          
         </a>
-        
       </div>
     
 
@@ -979,16 +948,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.18.2
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-18-2">
+          <span>
+            17.18.2
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics
+          
         </a>
-        
       </div>
     
 
@@ -1002,16 +971,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.18.3
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-18-3">
+          <span>
+            17.18.3
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding
+          
         </a>
-        
       </div>
     
     </div>
@@ -1037,16 +1006,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.19.1
-          <span class="status notstarted">
-            Exploring data sources
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-19-1">
+          <span>
+            17.19.1
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+          </span>
           Dollar value of all resources made available to strengthen statistical capacity in developing countries
+          
         </a>
-        
       </div>
     
 
@@ -1060,16 +1029,16 @@ var translations = {
       
 
       <div class="col-md-12  goal-indicator">
-        <span>
-          17.19.2
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
         <a href="/sdg-site-rwanda/17-19-2">
+          <span>
+            17.19.2
+            <span class="status complete">
+              Reported online
+            </span>
+          </span>
           Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration
+          
         </a>
-        
       </div>
     
     </div>
@@ -1084,23 +1053,26 @@ var translations = {
           <ul>
             <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
-              <li>
+              
+                <li>
                 
                   <a href="mailto:info@statistics.gov.rw" target="_blank">Contact us</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 
                   <a href="https://twitter.com/statisticsRW" target="_blank">Twitter</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 <a href="/sdg-site-rwanda/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
             
-            </ul>
+          </ul>
         </div>
       </div>
     </div>
@@ -1122,7 +1094,6 @@ var translations = {
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -1132,9 +1103,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210312180308'></script>
-
-<script>
+<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210312180333'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1167,13 +1136,15 @@ $(function() {
               chartTitle: domData.charttitle,
               chartTitles: domData.charttitles,
               measurementUnit: domData.measurementunit,
+              copyright: domData.copyright,
+              dataSource: domData.datasource,
+              geographicalArea: domData.geographicalarea,
               showData: domData.showdata,
+              footnote: domData.footnote,
               graphType: domData.graphtype,
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations,
-              indicatorDownloads: domData.indicatordownloads,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',
