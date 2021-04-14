@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210414114638">
+        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210414115626">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -282,6 +282,13 @@ var translations = {
 
   
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>This indicator has data of two Units type. The first data are expressed in “Numbers” while others are expressed in “Per 100,000 population”.</p>
+
+  </div>
+</div>
+
 
   
 
@@ -296,9 +303,9 @@ var translations = {
   data-indicatorid='indicator_3-4-2'
   data-id="3-4-2"
   data-country="Rwanda"
-  data-charttitle="Suicide mortality rate"
+  data-charttitle="Suicide mortality"
   data-charttitles="null"
-  data-measurementunit="Per 100,000 population"
+  data-measurementunit="Number/Per 100,000 population"
   data-datasource="Rwanda Investigation Bureau (RIB)"
   data-copyright=""
   data-geographicalarea="Rwanda"
@@ -340,7 +347,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Suicide mortality rate</caption>
+      <caption>Suicide mortality</caption>
       <thead>
         
         
@@ -574,7 +581,7 @@ var translations = {
     <p>Geographical Area: Rwanda</p>
     
     
-    <p>Unit of Measurement: Per 100,000 population</p>
+    <p>Unit of Measurement: Number/Per 100,000 population</p>
     
     
   </div>
@@ -624,7 +631,7 @@ data-event-label="Change to Map tab"
       <div id="chart-canvas">
         <h3 class="chart-title">
           
-            Suicide mortality rate
+            Suicide mortality
           
         </h3>
         <div id="chart" class="plot-container">
@@ -791,7 +798,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            <p>Per 100,000 population</p>
+            <p>Number/Per 100,000 population</p>
 
           
         </td>
@@ -890,8 +897,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data-rwanda/commit/2681c507c601f652caf30eebd76f46acc23d97f0" target="_blank">
-                2021-02-10: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data-rwanda/commit/099020547ffd848375f13d6897111de9b5817dd8" target="_blank">
+                2021-04-14: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1311,7 +1318,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Earliest available data </th>
         <td>
           
-            
+            <p>2015</p>
 
           
         </td>
@@ -1585,7 +1592,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210414114638'></script><script>
+<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210414115626'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
