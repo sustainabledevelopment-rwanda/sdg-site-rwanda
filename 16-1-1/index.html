@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210428075811">
+        <link rel="stylesheet" href="/sdg-site-rwanda/assets/css/style.css?v=20210428082531">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -298,8 +298,8 @@ var translations = {
   data-country="Rwanda"
   data-charttitle="Homicides rates (per 100,000 population)"
   data-charttitles="null"
-  data-measurementunit="Rate per 100,000 population"
-  data-datasource="RGB"
+  data-measurementunit="Rate per 100,000 population or Number"
+  data-datasource="Rwanda Governance Board (RGB)"
   data-copyright=""
   data-geographicalarea="Rwanda"
   data-footnote=""
@@ -568,13 +568,13 @@ var translations = {
 
   <div id="datatableFooter">
     
-    <p>Source: RGB</p>
+    <p>Source: Rwanda Governance Board (RGB)</p>
     
     
     <p>Geographical Area: Rwanda</p>
     
     
-    <p>Unit of Measurement: Rate per 100,000 population</p>
+    <p>Unit of Measurement: Rate per 100,000 population or Number</p>
     
     
   </div>
@@ -791,7 +791,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            <p>Rate per 100,000 population</p>
+            <p>Rate per 100,000 population or Number</p>
 
           
         </td>
@@ -890,8 +890,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data-rwanda/commit/2681c507c601f652caf30eebd76f46acc23d97f0" target="_blank">
-                2021-02-10: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sustainabledevelopment-rwanda/sdg-data-rwanda/commit/78442e2f7823a57e9c880233e9d36943b34ab7ed" target="_blank">
+                2021-04-28: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1283,7 +1283,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>RGB</p>
+            <p>Rwanda Governance Board (RGB)</p>
 
           
         </td>
@@ -1311,7 +1311,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Earliest available data </th>
         <td>
           
-            <p>2018</p>
+            <p>2016</p>
 
           
         </td>
@@ -1345,8 +1345,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="http://rgb.rw/fileadmin/Rwanda_Governance_Scorecard_all/RGS_5TH_EDITION_24_OCT2018.pdf" target="_blank">
-                http://rgb.rw/fileadmin/Rwanda_Governance_Scorecard_all/RGS_5TH_EDITION_24_OCT2018.pdf <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://www.rgb.rw/index.php?id=2" target="_blank">
+                Rwanda Governance Scorecard <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1366,7 +1366,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Release date </th>
         <td>
           
-            
+            <p>2019</p>
 
           
         </td>
@@ -1380,7 +1380,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Next release </th>
         <td>
           
-            
+            <p>2020</p>
 
           
         </td>
@@ -1394,7 +1394,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Statistical classification </th>
         <td>
           
-            
+            <p>Administrative</p>
 
           
         </td>
@@ -1408,7 +1408,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Contact details </th>
         <td>
           
-            
+            <p>info@rgb.rw</p>
 
           
         </td>
@@ -1422,7 +1422,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Other information </th>
         <td>
           
-            
+            <p>https://www.rgb.rw/index.php?id=2</p>
 
           
         </td>
@@ -1580,7 +1580,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210428075811'></script><script>
+<script src='/sdg-site-rwanda/assets/js/sdg.js?v=20210428082531'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
