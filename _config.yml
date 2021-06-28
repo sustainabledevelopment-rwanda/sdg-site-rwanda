@@ -164,6 +164,13 @@ exclude:
   - README.md
   - LICENSE
 
+# Left-aligned site header
+header:
+    include: header-menu-left-aligned.html
+    
+# Color set for charts
+graph_color_set: accessible
+
 # Optionally uncomment and update the settings below to control the mapping functionality.
 # These are only a few of the possible settings. For more details, see:
 # https://open-sdg.readthedocs.io/en/latest/maps/
