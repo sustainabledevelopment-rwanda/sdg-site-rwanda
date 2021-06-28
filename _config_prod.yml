@@ -14,8 +14,8 @@
 baseurl: ""
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://my-github-org.github.io/open-sdg-data-starter"
+remote_data_prefix: "https://sustainabledevelopment-rwanda.github.io/sdg-data-prod"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
-  ga_prod: ''
+  ga_prod: 'UA-148902754-1'
