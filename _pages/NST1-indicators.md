@@ -1,5 +1,5 @@
 ---
-title: My list of standalone indicators
+title: NST1 Indicators List
 layout: standalone-indicators
 permalink: /my-NST1-indicators-list/
 language: en
