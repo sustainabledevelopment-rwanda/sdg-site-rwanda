@@ -117,6 +117,8 @@ menu:
  # Use these to customise the main navigation.
  - path: /
    translation_key: general.goals
+ - path: /NST1-indicators-list/
+   translation_key: menu.NST1-indicators-list
  - path: /reporting-status/
    translation_key: menu.reporting_status
  - path: /about/
