@@ -117,8 +117,6 @@ menu:
  # Use these to customise the main navigation.
  - path: /
    translation_key: general.goals
- - path: /NST1-indicators-list/
-   translation_key: menu.NST1-indicators-list
  - path: /reporting-status/
    translation_key: menu.reporting_status
  - path: /about/
@@ -129,6 +127,8 @@ menu:
    translation_key: menu.guidance
  - path: /faq/
    translation_key: menu.faq
+ - path: /NST1-indicators-list/
+   translation_key: NST1 Indicators   
 
 footer_menu:
   - path: mailto:info@statistics.gov.rw
