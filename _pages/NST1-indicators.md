@@ -4,7 +4,6 @@ layout: standalone-indicators
 permalink: /NST1-indicators-list/
 language: en
 standalone_indicators:
-    - 1-15-1
-    - GDP-Per-Capita
+    - GDP
 ---
 Content for NST-1 Indicators
