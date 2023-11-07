@@ -47,6 +47,6 @@ jobs:
       with:
         REPOSITORY_NAME: sustainabledevelopment-rwanda/sustainabledevelopment-rwanda.github.io
         ACCESS_TOKEN: ${{ secrets.token }}
-        BRANCH: main
+        BRANCH: master
         FOLDER: _site
         CLEAN: true
