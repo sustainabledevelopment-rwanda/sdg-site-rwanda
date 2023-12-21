@@ -25,7 +25,7 @@ languages:
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 # Recommended: set this to a particular "release" of Open SDG. For example:
-remote_theme: open-sdg/open-sdg@1.8.0
+remote_theme: open-sdg/open-sdg@2.2.0
 #remote_theme: open-sdg/open-sdg@master
 
 # Use toggle for Series
@@ -44,16 +44,22 @@ create_indicators:
 create_goals:
   layout: goal-by-target
 create_pages:
-  pages:
-    - folder: /
+    - filename: ''
+      folder: /
       layout: frontpage
-    - folder: /reporting-status
+      title: ''
+    - filename: ''
+      folder: /reporting-status
       layout: reportingstatus
+      title: ''
     - filename: indicators.json
       folder: /
       layout: indicator-json
-    - folder: /search
+      title: ''
+    - filename: ''
+      folder: /search
       layout: search
+      title: ''
 
 analytics:
   ga_prod: ''
@@ -63,9 +69,9 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: info@statistics.gov.rw
-  suggestions: info@statistics.gov.rw
-  functional: info@statistics.gov.rw
+  questions: sustainabledevelopment@ons.gov.uk
+  suggestions: sustainabledevelopment@ons.gov.uk
+  functional: sustainabledevelopment@ons.gov.uk
 
 # International Support
 # Eg name: Australia and adjective: Australian
