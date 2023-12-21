@@ -69,9 +69,9 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: sustainabledevelopment@ons.gov.uk
-  suggestions: sustainabledevelopment@ons.gov.uk
-  functional: sustainabledevelopment@ons.gov.uk
+  questions: info@statistics.gov.rw
+  suggestions: info@statistics.gov.rw
+  functional: info@statistics.gov.rw
 
 # International Support
 # Eg name: Australia and adjective: Australian
