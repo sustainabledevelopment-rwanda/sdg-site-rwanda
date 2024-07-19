@@ -1216,8 +1216,8 @@ $(document).ready(function() {
 });
 opensdg.chartColors = function(indicatorId) {
   var colorSet = "accessible";
-  var numberOfColors = null;
-  var customColorList = null;
+  var numberOfColors = 0;
+  var customColorList = [];
 
   this.goalNumber = parseInt(indicatorId.slice(indicatorId.indexOf('_')+1,indicatorId.indexOf('-')));
   this.goalColors = [['e5243b', '891523', 'ef7b89', '2d070b', 'f4a7b0', 'b71c2f', 'ea4f62', '5b0e17', 'fce9eb'],
@@ -3147,8 +3147,8 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: null,
-      mapLayers: null,
+      mapOptions: {"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapLayers: [],
       precision: precision,
       precisionItems: precisionItems,
       decimalSeparator: decimalSeparator,
@@ -3443,7 +3443,7 @@ function updateHeadlineColor(contrast, chartInfo) {
  * @return {String} The headline color in hex form.
  */
 function getHeadlineColor(contrast) {
-    return isHighContrast(contrast) ? '#FFDD00' : '#00006a';
+    return isHighContrast(contrast) ? '#55a6e5' : '#004466';
 }
 
 /**
@@ -5792,7 +5792,7 @@ $(function() {
             this.needsMapUpdate = false;
             this.seriesColumn = 'Series';
             this.unitsColumn = 'Units';
-            this.displayForm = null;
+            this.displayForm = false;
             this.updateDisaggregations(plugin.startValues);
         },
 
