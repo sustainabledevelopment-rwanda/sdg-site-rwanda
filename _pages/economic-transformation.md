@@ -4,7 +4,7 @@ layout: standalone-indicators
 permalink: /NST1-economic-transformation/
 language: en
 standalone_indicators:
-    -
+    - GDP
 ---
 
 
