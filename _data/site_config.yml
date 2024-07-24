@@ -166,9 +166,9 @@ menu:
   - path: /faq/
     translation_key: menu.faq
     dropdown: []
-  - path: /NST1-indicators-list/
-    translation_key: NST1 Indicators
-    dropdown: []
+  #- path: /NST1-indicators-list/
+    #translation_key: NST1 Indicators
+    #dropdown: []
 metadata_edit_url: >-
   http://prose.io/sustainabledevelopment-rwanda/sdg-data-rwanda/edit/develop/meta/[id].md
 metadata_tabs: []
