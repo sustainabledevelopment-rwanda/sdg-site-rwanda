@@ -4,7 +4,7 @@ layout: standalone-indicators
 permalink: /NST1-social-transformation/
 language: en
 standalone_indicators:
-    -
+    - GDP
 ---
 
 
