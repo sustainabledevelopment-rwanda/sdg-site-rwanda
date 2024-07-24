@@ -1,4 +1,4 @@
-﻿analytics:
+analytics:
   ua: ''
   gtag: ''
   gtm: ''
@@ -58,9 +58,9 @@ empty_metadata_placeholder_sources: ''
 environment: staging
 footer_language_toggle: none
 footer_menu:
-  - path: 'mailto:info@statistics.gov.rw'
+  - path: mailto:info@statistics.gov.rw
     translation_key: menu.contact_us
-  - path: 'https://twitter.com/statisticsRW'
+  - path: https://twitter.com/statisticsRW
     translation_key: general.twitter
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
@@ -75,7 +75,7 @@ frontpage_goals_grid:
 frontpage_introduction_banner:
   title: frontpage.intro_title
   description: frontpage.intro_body
-goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
+goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 goal_image_extension: ''
 goals_page:
   title: ''
@@ -85,7 +85,7 @@ graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
 graph_color_list: []
 graph_color_number: 0
-graph_title_from_series: false
+graph_title_from_series: true
 header_language_toggle: none
 hide_empty_metadata: false
 hide_single_series: false
@@ -146,7 +146,7 @@ map_options:
     opacity: 1
     fillOpacity: 0
     color: '#172d44'
-    dashArray: '5,5'
+    dashArray: 5,5
 menu:
   - path: /
     translation_key: general.goals
@@ -187,7 +187,7 @@ progressive_web_app:
 proxy_indicators:
   label: ''
   description: ''
-remote_data_prefix: 'https://sustainabledevelopment-rwanda.github.io/sdg-data-rwanda/'
+remote_data_prefix: https://sustainabledevelopment-rwanda.github.io/sdg-data-rwanda/
 reporting_status:
   title: ''
   description: ''
@@ -209,8 +209,8 @@ search_index_extra_fields: []
 site_config_form:
   enabled: true
   dropdowns: []
-  repository_link: ''
   translation_link: ''
+  repository_link: /tree/develop/_data
 time_series_attributes:
   - field: COMMENT_TS
     label: indicator.footnote
