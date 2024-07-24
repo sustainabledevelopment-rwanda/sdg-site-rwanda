@@ -64,7 +64,9 @@ footer_menu:
     translation_key: general.twitter
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
-frontpage_cards: []
+frontpage_cards:
+  - title: frontpage.download_all
+    include: components/download-all-data.html
 frontpage_goals_grid:
   title: Our data for Sustainable Development Goal indicators
   description: >-
