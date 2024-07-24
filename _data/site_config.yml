@@ -217,3 +217,4 @@ time_series_attributes:
 validate_indicator_config: false
 validate_site_config: false
 x_axis_label: ''
+use_new_config_forms: true
