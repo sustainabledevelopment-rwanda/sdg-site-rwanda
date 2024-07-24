@@ -9,7 +9,7 @@ baseurl: "/sdg-site-rwanda"
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 # Recommended: set this to a particular "release" of Open SDG. For example:
-remote_theme: open-sdg/open-sdg@2.2.0
+remote_theme: open-sdg/open-sdg@2.3.3
 
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
