@@ -1,6 +1,6 @@
 ---
 title: NST1 Indicators List
-layout: standalone-indicators
+layout: page
 permalink: /NST1-indicators-list/
 language: en
 ---
