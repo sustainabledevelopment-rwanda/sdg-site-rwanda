@@ -9,6 +9,6 @@ There are 3 pillars:
 
 Pillar 1 - [Economic Transformation]({{ site.baseurl }}/NST1-economic-transformation/)
 
-Pillar 2 - [Economic Transformation]({{ site.baseurl }}/NST1-social-transformation/)
+Pillar 2 - [Social Transformation]({{ site.baseurl }}/NST1-social-transformation/)
 
-Pillar 3 - [Economic Transformation]({{ site.baseurl }}/NST1-governance-transformation/)
+Pillar 3 - [Governance Transformation]({{ site.baseurl }}/NST1-governance-transformation/)
