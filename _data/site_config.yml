@@ -180,10 +180,10 @@ progress_status:
   status_help: ''
   status_types: []
 progressive_web_app:
-  enabled: false
-  name: ''
-  short_name: ''
-  precaching: false
+  enabled: True
+  name: 'Rwanda SDG Data App'
+  short_name: 'Rwanda SDG'
+  precaching: True
 proxy_indicators:
   label: ''
   description: ''
