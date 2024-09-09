@@ -127,11 +127,13 @@ map_options:
   disaggregation_controls: false
   minZoom: 5
   maxZoom: 10
-  tileURL: ''
+  tileURL: https://tile.openstreetmap.org/{z}/{x}/{y}.png
   tileOptions:
     id: ''
     accessToken: ''
-    attribution: ''
+    attribution: >-
+      &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+      contributors
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
