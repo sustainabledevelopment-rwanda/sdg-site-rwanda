@@ -118,8 +118,8 @@ languages:
 languages_public: []
 logos: []
 map_layers:
-  - subfolder: geojsons
-    label: Regions
+  - subfolder: regions
+    label: regions
     min_zoom: 5
     max_zoom: 10
     staticBorders: false
