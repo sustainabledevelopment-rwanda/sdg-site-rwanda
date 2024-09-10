@@ -131,9 +131,6 @@ map_options:
   tileOptions:
     id: ''
     accessToken: ''
-    attribution: >-
-      &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
-      contributors
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
