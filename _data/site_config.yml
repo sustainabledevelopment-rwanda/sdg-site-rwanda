@@ -127,10 +127,15 @@ map_options:
   disaggregation_controls: false
   minZoom: 5
   maxZoom: 10
-  tileURL: https://tile.openstreetmap.org/{z}/{x}/{y}.png
+  tileURL: 'https://{s}.tile.jawg.io/{id}/{z}/{x}/{y}{r}.png?access-token={accessToken}'
   tileOptions:
-    id: ''
-    accessToken: ''
+    id: 'jawg-light'
+    accessToken: 'RLJGi6g4CX353pLAsUrp6hyv0xbVay2e7ILldJCi82TwDeLEEtEG321DvihdXr4Z'
+    attribution: >-
+      <a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps"
+      target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a
+      href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+      contributors
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
