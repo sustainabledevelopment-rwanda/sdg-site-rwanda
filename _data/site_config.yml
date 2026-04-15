@@ -42,8 +42,8 @@ custom_js: []
 data_edit_url: >-
   http://prose.io/sustainabledevelopment-rwanda/sdg-data-rwanda/edit/develop/data/indicator_[id].csv
 data_fields:
-  units: ''
-  series: ''
+  units: 'UNIT_MEASURE'
+  series: 'SERIES'
 date_formats: []
 disclaimer:
   phase: ''
