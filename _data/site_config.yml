@@ -89,7 +89,7 @@ graph_title_from_series: true
 header_language_toggle: none
 hide_empty_metadata: false
 hide_single_series: true
-hide_single_unit: false
+hide_single_unit: true
 ignored_disaggregations: []
 indicator_config_form:
   enabled: false
