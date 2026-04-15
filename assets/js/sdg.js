@@ -3324,7 +3324,7 @@ var indicatorView = function (model, options) {
     var helpers = 
 (function() {
 
-  var HIDE_SINGLE_SERIES = false;
+  var HIDE_SINGLE_SERIES = true;
 var HIDE_SINGLE_UNIT = false;
 var PROXY_PILL = '<span aria-describedby="proxy-description" class="proxy-pill">' + translations.t("indicator.proxy") + '</span>';
 
