@@ -88,7 +88,7 @@ graph_color_number: 0
 graph_title_from_series: true
 header_language_toggle: none
 hide_empty_metadata: false
-hide_single_series: false
+hide_single_series: true
 hide_single_unit: false
 ignored_disaggregations: []
 indicator_config_form:
