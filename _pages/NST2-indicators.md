@@ -1,14 +1,14 @@
 ---
-title: NST2 Indicators List
+title: NST2 Pillars List
 layout: page
-permalink: /NST2-indicators-list/
+permalink: /NST2-pillars-list/
 language: en
 ---
 Content for NST-2 Indicators
 There are 3 pillars:
 
-Pillar 1 - [Economic Transformation]({{ site.baseurl }}/NST1-economic-transformation/)
+Pillar 1 - [Economic Transformation]({{ site.baseurl }}/NST2-economic-transformation/)
 
-Pillar 2 - [Social Transformation]({{ site.baseurl }}/NST1-social-transformation/)
+Pillar 2 - [Social Transformation]({{ site.baseurl }}/NST2-social-transformation/)
 
-Pillar 3 - [Governance Transformation]({{ site.baseurl }}/NST1-governance-transformation/)
+Pillar 3 - [Governance Transformation]({{ site.baseurl }}/NST2-governance-transformation/)
