@@ -1,7 +1,7 @@
 ---
 title: Sustainable economic growth and increased per capita incomes
 layout: standalone-indicators
-permalink: /NST2-indicators-1/
+permalink: /NST2-eco-indicators-1/
 language: en
 standalone_indicators:
     - Annual average Real GDP growth
