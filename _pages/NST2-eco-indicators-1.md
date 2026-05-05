@@ -5,9 +5,6 @@ permalink: NST2-eco-indicators-1/
 language: en
 standalone_indicators:
     - GDP1
-
-    
-    - GDP2
 ---
 The following list contains the indicators for Economic Transformation Pillar, Outcome 1 - Sustainable economic growth and increased per capita incomes:
 
