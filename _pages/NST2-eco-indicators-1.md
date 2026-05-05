@@ -5,6 +5,8 @@ permalink: /NST2-eco-indicators-1/
 language: en
 standalone_indicators:
     - GDP1
+
+    
     - GDP2
 ---
 
