@@ -8,7 +8,7 @@ language: en
 
 The following list are outcomes for NST2 economic transformation pillar:
 
-1. Sustainable economic growth and increased per capita incomes
+1. [Sustainable economic growth and increased per capita incomes]({{ site.baseurl }}/NST2-indicators-1/)
 1. Increased national savings for investment
 1. Increased value of private investments
 1. Increased value of exports and reduced current account deficit
