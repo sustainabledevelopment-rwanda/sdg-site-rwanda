@@ -1,10 +1,10 @@
 ---
-title: NST1 Indicators List
+title: NST2 Indicators List
 layout: page
-permalink: /NST1-indicators-list/
+permalink: /NST2-indicators-list/
 language: en
 ---
-Content for NST-1 Indicators
+Content for NST-2 Indicators
 There are 3 pillars:
 
 Pillar 1 - [Economic Transformation]({{ site.baseurl }}/NST1-economic-transformation/)
