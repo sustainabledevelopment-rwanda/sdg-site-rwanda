@@ -2078,4 +2078,36 @@
           "status": "complete"
         }]
     }
+  },
+  {
+    "goal": {
+      "id": "GDP1",
+      "title": "global_indicators.GDP1-title",
+      "indicators": [
+        
+        {
+          "id": "GDP1",
+          "title": "global_indicators.GDP1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-rwanda/GDP1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "GDP2",
+      "title": "global_indicators.GDP2-title",
+      "indicators": [
+        
+        {
+          "id": "GDP2",
+          "title": "global_indicators.GDP2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-rwanda/GDP2/",
+          "status": "complete"
+        }]
+    }
   }]
