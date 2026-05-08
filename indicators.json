@@ -2082,13 +2082,13 @@
   {
     "goal": {
       "id": "GDP1",
-      "title": "global_indicators.GDP1-title",
+      "title": "Annual average Real GDP growth",
       "indicators": [
         
         {
           "id": "GDP1",
-          "title": "global_indicators.GDP1-title",
-          "description": "",
+          "title": "Annual average Real GDP growth",
+          "description": "The poverty line is a threshold of the value of total annual per capita consumption in a household below which an individual is considered poor. Aggregate household consumption is computed as the sum of expenditure on food as well as value of auto consumption, expenditure on non-food, health items, education, housing utilities, value of in-kind wages, other benefits received by the household and a measure of the use value of durable goods owned by the household. Consumption per capita is then computed as the total consumption per adult equivalent. Where adult equivalence is an aggregate indicator for household size which takes into account its age and sex composition. The poverty line is then set with reference to a minimum food consumption basket, judged to offer the required number of calories (2200 k calories per day) for a Rwandan likely to be involved in physically demanding agricultural activity, along with an allowance for non-food consumption. The non-food consumption expenditure is determined as a function of food consumption.",
           "keywords": "",
           "href": "/sdg-site-rwanda/GDP1/",
           "status": "complete"
@@ -2098,13 +2098,13 @@
   {
     "goal": {
       "id": "GDP2",
-      "title": "global_indicators.GDP2-title",
+      "title": "Nominal GDP",
       "indicators": [
         
         {
           "id": "GDP2",
-          "title": "global_indicators.GDP2-title",
-          "description": "",
+          "title": "Nominal GDP",
+          "description": "The poverty line is a threshold of the value of total annual per capita consumption in a household below which an individual is considered poor. Aggregate household consumption is computed as the sum of expenditure on food as well as value of auto consumption, expenditure on non-food, health items, education, housing utilities, value of in-kind wages, other benefits received by the household and a measure of the use value of durable goods owned by the household. Consumption per capita is then computed as the total consumption per adult equivalent. Where adult equivalence is an aggregate indicator for household size which takes into account its age and sex composition. The poverty line is then set with reference to a minimum food consumption basket, judged to offer the required number of calories (2200 k calories per day) for a Rwandan likely to be involved in physically demanding agricultural activity, along with an allowance for non-food consumption. The non-food consumption expenditure is determined as a function of food consumption.",
           "keywords": "",
           "href": "/sdg-site-rwanda/GDP2/",
           "status": "complete"
