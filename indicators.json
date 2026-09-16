@@ -150,6 +150,22 @@
           "status": "complete"
         },
         {
+          "id": "2-2-3",
+          "title": "Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)",
+          "description": "This indicator measures the percentage of women aged 15−49 years with a haemoglobin concentration less than 120 g/L for non- pregnant women and lactating women, and less than 110 g/L for pregnant women, adjusted for altitude and smoking.",
+          "keywords": "",
+          "href": "/sdg-site-rwanda/2-2-3/",
+          "status": "complete"
+        },
+        {
+          "id": "2-2-4",
+          "title": "global_indicators.2-2-4-title",
+          "description": "Diverse diets, which are essential for providing the micronutrients needed for healthy growth and development, reducing the risk of deficiencies.",
+          "keywords": "",
+          "href": "/sdg-site-rwanda/2-2-4/",
+          "status": "complete"
+        },
+        {
           "id": "2-3-1",
           "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
           "description": "",
